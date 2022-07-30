@@ -1,0 +1,373 @@
+body{
+   
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+
+margin:0px;
+padding: 0px;
+
+background-color: rgb(4,31,56)
+}
+
+
+
+/* navigation bar block*/
+.block1 {
+    background-color: black;
+    margin-top:-22px;
+    
+
+    height:85px;
+    width:100vw;
+    
+    
+    overflow:hidden;
+
+    color: white;  
+}
+nav{
+    margin-top:0;
+    padding: 0;
+}
+
+li {
+    margin-top: 0;
+    float:left;
+    list-style-type: none;
+    
+}
+li a {
+    display:block;
+    padding:16px 20px;
+    text-decoration: none;
+    font-size: large;
+    color:#fff;
+    margin-top:0;
+    
+    
+}
+a:hover{
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1ED760;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.movies-heading h2{
+font-weight: 400;
+margin: 0px;
+padding: 1px 20px;
+background-color: rgb(44, 41, 41);
+color: antiquewhite;
+border: 1px solid rgba(0,0,0,0.06);
+font-size: 1.7rem;
+letter-spacing: 1px;
+text-transform: uppercase;
+width: 100%;
+}
+.movies-heading{
+display: flex;
+margin:0px 2%;
+}
+.movies-box{
+width:300px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+box-shadow: 2px 2px 30px rgba(240, 232, 232, 0.2);
+margin: 20px;
+border-radius: 5px;
+overflow: hidden;
+border-top: 3px solid #292929;
+background-color: rgb(63, 65, 67);
+}
+.movies-img{
+width:100%;
+height: 400px;
+position: relative;
+}
+.movies-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.movies-box a{
+text-align:center;
+display: block;
+font-weight: 600;
+display: -webkit-box;
+max-width: 80%;
+-webkit-line-clamp: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+color: antiquewhite;
+margin: 20px;
+}
+.movies-box:hover{
+transform: translateY(-10px);
+transition: all ease 0.2s;
+}
+#movies-list{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.quality{
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+background-color: #1f1f1f;
+color: #d6caca;
+padding: 5px 20px;
+font-weight: 500;
+border-radius: 0px 0px 10px 10px;
+box-shadow: 5px 10px 30px rgba(0,0,0,0.4);
+}
+.btns{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.btns a{
+width: 130px;
+height: 40px;
+border:none;
+outline: none;
+color: #ffffff;
+background-color: #fff;
+margin: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+}
+.btns a:hover{
+background-color: #284fd1;
+}
+footer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-top: 1px solid rgba(0,0,0,0.1);
+
+}
+footer p{
+color:#5e5e5e;
+margin: 10px 0px;
+font-size: 0.9rem;
+}
+
+@media(max-width:680px){
+
+.movies-box{
+    flex-direction: row;
+    width:90%;
+    border: 1px solid rgba(0,0,0,0.2);
+    
+}
+.movies-box a{
+    width:65%;
+}
+footer{
+    justify-content: space-between;
+    padding:0px 20px;
+    text-align: center;
+}
+}
+@media(max-width:440px){
+.movies-box a,.movies-box{
+    width: 100%;
+}
+.movies-box{
+    flex-direction: column;
+}
+
+.search{
+    width: 90%;
+    height: 40px;
+}
+}
+.logo img{
+width: 100px;
+height: 100px;
+border-radius: 90px;
+}
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+background-color: #bd295f;
+}
+
+
+
+.container:hover .overlay {
+opacity: 1;
+
+}
+
+.text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.carousel-inner img {
+width: 100%;
+height: 115%;
+}
+.description {
+position: absolute;
+bottom: 8px;
+left: 16px;
+color: antiquewhite;
+padding-bottom: 20px;
+}
+.description a{
+border: 1px rgb(105, 105, 227) solid;
+border-radius: 10px;
+padding: 5px;
+text-decoration: #1a1a1a;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 10px 10px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+opacity: 10.0;
+}
+
+/* Set a style for all buttons */
+button {
+background-color: #1547c8;
+color: white;
+padding-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+border: none;
+cursor: pointer;
+width: 100%;
+display: block;
+
+
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+position: relative;
+}
+
+img.avatar {
+width: 40%;
+border-radius: 50%;
+}
+
+.container {
+padding: 16px;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(30, 29, 29); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: red;
+cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+   display: block;
+   float: none;
+}
+.cancelbtn {
+   width: 100%;
+}
+}
